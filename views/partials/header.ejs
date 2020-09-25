@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>YelpCamp</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+	<style>
+	img {
+  max-width: 100%; 
+  height: auto;    
+}
+	.topnav-right{
+	float:right;
+		}
+	</style>
+<body>
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand active" href="/campgrounds">Yelpcamp</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right ">
+		<%if(!currentUser) {%>
+      <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</a></li>
+      <li><a href="/register"><span class="glyphicon glyphicon-user"></span>&nbsp;Sign Up</a></li>
+		 <%}else{%>
+		<li> <a  href="#">Signed in as <%=currentUser.username%></a></li>
+      <li><a href="/logout">Logout</a></li><%}%> 
+      
+    </ul>
+  </div>
+</nav>
+	<div class="container">
+		<%if(success && success.length>0){%>
+	   <div class="alert alert-success" role="alert"> 
+		<%=success%>
+		</div>
+		<%}%>
+		<%if(error && error.length>0){%>
+		<div class="alert alert-danger" role="alert">
+		<%=error%>
+		</div>
+		<%}%>
+	</div>
+	
+	

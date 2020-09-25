@@ -1,0 +1,38 @@
+<%- include ("../partials/header.ejs") %>
+
+<div class="container">
+	<div class="jumbotron">
+		<div class="container">
+	<h1>
+	Welcome to YelpCamp!
+    </h1>
+	<h4>
+		Here are some handpicked campsites from Munnar!
+	</h4><br>
+    <a class="btn btn-md btn-info" href="/campgrounds/new"> Add new campsite!</a>
+		</div>
+</div>
+<div class="row text-center" style="display:flex; flex-wrap:wrap;">
+<%campground.forEach(function(camp){%>
+	<div class="col-md-3 col-sm-6">
+      <div class="thumbnail">
+		  <p>
+		<img src=<%=camp.url%> >
+	</p>
+		  <div class="caption">
+			  <h4>
+		<%=camp.name%>
+	</h4>
+			  <a href="/campgrounds/<%=camp._id%>" class="btn btn-lg btn-primary"> More info</a>
+		  </div>
+		  
+	</div>	
+	</div>	
+
+<%})%>
+</div>
+	
+<a href="/"> Click here to go to welcome page!</a>
+</div>
+
+<%- include ("../partials/footer.ejs")%>
