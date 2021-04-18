@@ -8,6 +8,7 @@ var User=require("./model/user");
 var flash=require("connect-flash");
 var localStrategy=require("passport-local"),
 	methodOverride=require("method-override");
+var port = process.env.PORT || 3000
 	//passportLocal=require("passport-local-mongoose");
 //for spotify auth
 var cookieParser = require('cookie-parser');
@@ -69,9 +70,9 @@ var  s1,
     p1,
     p2;
 	app.use(cookieParser());
-var client_id = '70ec80564b4d47e5ac8f94596023370a'; // og client id-948e691fc2cc42b99db55a783cc5be60
-var client_secret = '4f50f5a4ab2e4440af4ae0dec9ddb94c'; // og secret-71109d1b8abd445c933650a38bd759db
-var redirect_uri = 'https://pacific-waters-96786.herokuapp.com/auth/spotify/callback'; // Your redirect uri  https://pacific-waters-96786.herokuapp.com/
+var client_id = '70ec80564b4d47e5ac8f94596023370a'; 
+var client_secret = '4f50f5a4ab2e4440af4ae0dec9ddb94c'; 
+var redirect_uri = 'https://pacific-waters-96786.herokuapp.com/auth/spotify/callback'; 
 var generateRandomString = function(length) {
   var text = '';
   var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -203,6 +204,6 @@ app.get("/spotify/:name/:emotion", function(req, res) {
 	  });
 }
 )
-app.listen(3000, function(){ 
-  console.log('Server listening on port 3000');
+app.listen(port, function(){ 
+  console.log('Server listening on port');
 });
