@@ -2,31 +2,44 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>YelpCamp</title>
+	<title>TravelDiaries</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 	<style>
+		body{
+			min-height: 100%;
+		}
 	img {
   max-width: 100%; 
   height: auto;    
-}
+   }
 	.topnav-right{
 	float:right;
 		}
+		.navbar-custom {
+            background-color: rgb(232, 202, 35);
+        }
+        /* Modify brand and text color */
+          
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: rgb(255, 255, 255);
+        }
 	</style>
 <body>
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-custom">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand active" href="/campgrounds">Yelpcamp</a>
+      <a class="navbar-brand active" href="/campgrounds">TravelDiaries</a>
     </div>
     <ul class="nav navbar-nav navbar-right ">
 		<%if(!currentUser) {%>
-      <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</a></li>
-      <li><a href="/register"><span class="glyphicon glyphicon-user"></span>&nbsp;Sign Up</a></li>
+      <a class="navbar-brand active" href="/login"><span class="glyphicon glyphicon-log-in "></span>&nbsp;Login</a>
+      <a class="navbar-brand active" href="/register"><span class="glyphicon glyphicon-user "></span>&nbsp;Sign Up</a>
 		 <%}else{%>
-		<li> <a  href="#">Signed in as <%=currentUser.username%></a></li>
-      <li><a href="/logout">Logout</a></li><%}%> 
+	 <a class="navbar-brand active" href="#">Signed in as <%=currentUser.username%></a>
+      <a class="navbar-brand active" href="/logout">Logout</a><%}%> 
       
     </ul>
   </div>

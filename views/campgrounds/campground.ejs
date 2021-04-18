@@ -1,38 +1,82 @@
 <%- include ("../partials/header.ejs") %>
 
 <div class="container">
-	<div class="jumbotron">
-		<div class="container">
-	<h1>
-	Welcome to YelpCamp!
-    </h1>
-	<h4>
-		Here are some handpicked campsites from Munnar!
-	</h4><br>
-    <a class="btn btn-md btn-info" href="/campgrounds/new"> Add new campsite!</a>
-		</div>
-</div>
-<div class="row text-center" style="display:flex; flex-wrap:wrap;">
-<%campground.forEach(function(camp){%>
-	<div class="col-md-3 col-sm-6">
-      <div class="thumbnail">
-		  <p>
-		<img src=<%=camp.url%> >
-	</p>
-		  <div class="caption">
-			  <h4>
-		<%=camp.name%>
-	</h4>
-			  <a href="/campgrounds/<%=camp._id%>" class="btn btn-lg btn-primary"> More info</a>
-		  </div>
-		  
-	</div>	
-	</div>	
+  <div class="jumbotron">
+    <div>
+      <!--class="container" -->
+      <h1>Welcome to TravelDiaries!</h1>
+      <h2>Explore.Create.Inspire.</h2>
+      <div>
+        Being locked up in this pandemic,don’t let beautiful memories fade.
+        Immerse yourself in these travel experiences,with the power of music to
+        take you to unkown places! Create your own travel diary to capture and
+        share your experiences.
+      </div>
+      <br />
+      <a class="btn btn-md btn-info" href="/campgrounds/new">
+        Add your experience!</a
+      >
+    </div>
+  </div>
 
-<%})%>
+  <div class="row text-center" style="display: flex; flex-wrap: wrap">
+    <%campground.forEach(function(camp){%>
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail">
+        <p><img src=<%=camp.url%> ></p> 
+        <div class="caption">
+          <h4><%=camp.name%></h4>
+          <a href="/campgrounds/<%=camp._id%>" class="btn btn-lg btn-primary">
+            More info</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <%})%>
+    <div class="row text-center" style="display: flex; flex-wrap: wrap">
+      <div style="width: 50%; margin: auto">
+        <h1>
+          Here are some specially curated travel songs to get you in the travel
+          mood!
+        </h1>
+      </div>
+      <div style="margin: auto">
+        <iframe
+          src="https://open.spotify.com/embed/playlist/0yXe2Ok6uWm15lzStDZIyN"
+          width="300"
+          height="380"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <div style="width: 50%; margin: auto; text-align: center">
+    <h1>
+      Want to listen to some songs depending on your travel mood? Join in to our
+      listening room!
+    </h1>
+  </div>
+  <br />
+  <div style="width: 50%; margin: auto; text-align: center">
+    <a class="btn btn-lg btn-info" href="/auth/spotify"
+      >Enter the listening room</a
+    >
+  </div>
 </div>
-	
-<a href="/"> Click here to go to welcome page!</a>
+
+<div class="fixed-bottom">
+  <div class="navbar-custom" style="margin-top: 25px; padding-bottom: 0%">
+    <div class="container-fluid">
+      <a class="navbar-brand active" href="/campgrounds">
+        Made with Love by TravelDiaries</a
+      >
+    </div>
+  </div>
 </div>
 
 <%- include ("../partials/footer.ejs")%>

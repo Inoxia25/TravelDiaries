@@ -1,5 +1,4 @@
 //=======COMMENT SECTION========
-//*************************************************
 var express=require("express");
 var router=express.Router({mergeParams:true});
 var Campground=require("../model/campground");
@@ -43,7 +42,7 @@ router.post("/",middleware.isLoggedIn,function(req,res){ //to prevent posting of
 })
 //edit route for comment
 router.get("/:comment_id/edit",middleware.checkCommentOwnership,function(req,res){
-	//looking up campground by id
+	//looking up travelsite by id
 	Campground.findById(req.params.id).populate("comments").exec(function(err,foundCamp){
 		if(err) { req.flash("error","Campground not found!");console.log(err);}
 		else{

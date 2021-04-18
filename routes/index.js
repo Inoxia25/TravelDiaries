@@ -4,13 +4,10 @@ var passport=require("passport");
 var User=require("../model/user");
 var middleware=require("../middleware"); //no need of writing index .js as directory always calls index.js by default
 router.get("/",function(req,res){
-	res.render("landing.ejs");
+	res.redirect("/campgrounds");
 });
 
-	
-//*****************
 //AUTH ROUTES
-//*****************
 //show register form
 router.get("/register",function(req,res){
 	res.render("register.ejs");
@@ -44,4 +41,6 @@ router.get("/logout",function(req,res){
 	req.flash("success","Logged You out");
 	res.redirect("/campgrounds");
 })
+
+
 module.exports=router;

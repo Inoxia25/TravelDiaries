@@ -9,7 +9,6 @@ router.get("/",function(req,res){
 			console.log(err);
 		else
 			res.render("campgrounds/campground.ejs",{campground: campgrounds});
-	
 	})
 });
 	

@@ -11,4 +11,4 @@ var campgroundSchema=new mongoose.Schema({
 	ref: "Comment" //the model name
 }]
 });
-module.exports=mongoose.model("Campground",campgroundSchema);// changing var Campground to this an returning it
+module.exports=mongoose.model("Campground",campgroundSchema);

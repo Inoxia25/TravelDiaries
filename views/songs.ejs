@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TravelDiaries</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+	<style>
+	img {
+  max-width: 100%; 
+  height: auto;    
+}
+	.topnav-right{
+	float:right;
+		}
+		.navbar-custom {
+            background-color: rgb(232, 202, 35);
+        }
+        /* Modify brand and text color */
+          
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: rgb(255, 255, 255);
+        }
+	</style>
+<body>
+	<nav class="navbar navbar-custom ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand active" href="/">TravelDiaries</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right ">
+		
+     <a class="navbar-brand active">&nbsp;Logged into Spotify as <%=name%></a>
+		
+    </ul>
+  </div>
+</nav>
+<div>
+    <br>
+    <br>
+    <div style="width: 50%; margin:auto;text-align:center;">
+        <h1>What is your travel mood?</h1>
+    </div>
+    <br>
+    <br>
+   <div  style="width: 50%; margin:auto; text-align:center;">
+    <a class="btn btn-lg btn-info" href="/spotify/<%=name%>/hiking"> Hiking</a>
+    <a class="btn btn-lg btn-info" href="/spotify/<%=name%>/roadtrip"> A Road Trip</a>
+    <a class="btn btn-lg btn-info" href="/spotify/<%=name%>/beach"> Beach</a>
+    <a class="btn btn-lg btn-info" href="/spotify/<%=name%>/mountains"> Trip to the Mountains</a>
+</div>
+  <br>
+    <% if(songs.s1) { %>
+        <div style="width: 50%; margin:auto;text-align:center;">
+            <h4>Songs recommended</h>
+        </div>
+<div  style=" width: 50%; margin:auto">
+    <iframe src="https://open.spotify.com/embed/track/<%=songs.s1%>" width="300" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/track/<%=songs.s2%>" width="300" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</div>
+		<br>
+        <br>
+        <div style="width: 50%; margin:auto;text-align:center;">
+            <h4>Playlists recommended</h>
+        </div>
+        <div  style="margin:auto; width: 50%;">
+            <iframe src="https://open.spotify.com/embed/playlist/<%=songs.p1%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed/playlist/<%=songs.p2%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+		
+		<br>
+        <br>
+        <div style="width: 50%; margin:auto;text-align:center;">
+            <h4>Albums recommended</h>
+        </div>
+        <div  style="margin:auto; width: 50%;">
+            <iframe src="https://open.spotify.com/embed/album/<%=songs.a1%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed/album/<%=songs.a2%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+		
+        <% } %>
+</div>
+
+<%- include ("./partials/footer.ejs")%>

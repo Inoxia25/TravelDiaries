@@ -5,4 +5,4 @@ var commentSchema=new mongoose.Schema({
 			username:String}
 		, 
 	text: String});
-module.exports= mongoose.model("Comment",commentSchema); // changing var Campground to this an returning it
+module.exports= mongoose.model("Comment",commentSchema); 
