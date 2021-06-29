@@ -4,7 +4,7 @@ A web app that allows users to share their travel experiences and listen to musi
 ## Demo link
 https://travel-diariess.herokuapp.com/
 
-## What it Does
+## What it Does:
 - Allows users to signup/login.
 - Allows users to add/edit/delete travel experiences by adding title, image link, cost per night and description of the experience.
 - Allows other users to comment on the travel experiences, and edit/delete their comments later.
