@@ -20,7 +20,7 @@ https://travel-diariess.herokuapp.com/
 ## Clone the repository 🏁
 Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the copy to clipboard icon.
 
-Open a terminal and run the following git command:
+Open a terminal and run the following git command-
 
 `git clone "url you just copied"`
 where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
@@ -44,6 +44,6 @@ After cloning the repo
 - Authentication done using Passport.js.
 - MongoDB is used as a database to store user data.
 - Spotify API: To fetch and manage the relevant catalogs about artists, tracks and playlists.  
-- 'Connect-flash' used to render success and error messages
+- 'Connect-flash' used to render success and error messages.
 
 
