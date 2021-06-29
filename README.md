@@ -1,15 +1,14 @@
 # [TravelDiaries](https://github.com/Inoxia25/TravelDiaries/)
-A web app that plays music according to your emotional needs and helps you recharge your mental health with an altogether new and different listening experience.
+A web app that allows users to share their travel experiences and listen to music based on their travel mood.
 
 ## What it Does
 It provides a well earned respite and relief to the tired mind and soul through music and a variety of proven meditative reliefs and stress busting techniques to anybody who is stressed out or feeling negative about something. We have also tried to make an immersive listening experience with soothing landscapes and build up situational stories that are meant to release stress and feel transformative. There is also a friendly bot to answer your questions and a blog section featuring related music therapy articles.
 
 ## Demo link
-https://rhythmind.herokuapp.com/
+travel-diariess.herokuapp.com/
 
 
 ## How to start ? 🎪
-![](http://pa1.narvii.com/6468/75242fadf2cc1df5ca1f5f8a1906a6a9db572dca_00.gif)
 - If you don't have git on your machine, [install](https://docs.github.com/en/github/getting-started-with-github/set-up-git) it.
 
 ## Fork this repository 🚀
@@ -25,7 +24,7 @@ where "url you just copied" (without the quotation marks) is the url to this rep
 
 For example:
 
-`git clone https://github.com/Swatilekha-Roy/rhythMind.git`
+`git clone https://github.com/Inoxia25/TravelDiaries/`
 
 ## How to run ? 🛴
 After cloning the repo
