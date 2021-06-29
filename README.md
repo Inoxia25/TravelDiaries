@@ -4,6 +4,12 @@ A web app that allows users to share their travel experiences and listen to musi
 ## Demo link
 https://travel-diariess.herokuapp.com/
 
+## What it Does
+- Allows users to signup/login.
+- Allows users to add/edit/delete travel experiences by adding title, image link, cost per night and description of the experience.
+- Allows other users to comment on the travel experiences, and edit/delete their comments later.
+- Shows a travel playlist with all the songs for your travel!
+- Allows you to choose your travel mood (like hiking, going on a road trip,etc) and relevant songs are recommended using Spotify after authentication using Spotify is done.
 
 ## How to start ? 🎪
 - If you don't have git on your machine, [install](https://docs.github.com/en/github/getting-started-with-github/set-up-git) it.
@@ -31,15 +37,7 @@ After cloning the repo
 - Move on and run `node app.js`
 - This will start the project automatically on `localhost:3000`.
 
-## What it Does
-- Allows users to signup/login.
-- Allows users to add/edit/delete travel experiences by adding title, image link, cost per night and description of the experience.
-- Allows other users to comment on the travel experiences, and edit/delete their comments later.
-- Shows a travel playlist with all the songs for your travel!
-- Allows you to choose your travel mood (like hiking, going on a road trip,etc) and relevant songs are recommended using Spotify after authentication using Spotify is done.
-
 ## Technologies Used
-We utilized various technologies ranging from animation tools, web development tools, scripting languages and multiple APIs to build ‘rythMind’. 
 - Front end languages: HTML5, CSS3, Javascript
 - Front end framework: Bootstrap to design the user interface (UI)
 - Backend: Node.js, Express.js
