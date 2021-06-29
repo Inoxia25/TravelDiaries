@@ -1,11 +1,8 @@
 # [TravelDiaries](https://github.com/Inoxia25/TravelDiaries/)
 A web app that allows users to share their travel experiences and listen to music based on their travel mood.
 
-## What it Does
-It provides a well earned respite and relief to the tired mind and soul through music and a variety of proven meditative reliefs and stress busting techniques to anybody who is stressed out or feeling negative about something. We have also tried to make an immersive listening experience with soothing landscapes and build up situational stories that are meant to release stress and feel transformative. There is also a friendly bot to answer your questions and a blog section featuring related music therapy articles.
-
 ## Demo link
-travel-diariess.herokuapp.com/
+https://travel-diariess.herokuapp.com/
 
 
 ## How to start ? 🎪
@@ -34,20 +31,21 @@ After cloning the repo
 - Move on and run `node app.js`
 - This will start the project automatically on `localhost:3000`.
 
+## What it Does
+- Allows users to signup/login.
+- Allows users to add/edit/delete travel experiences by adding title, image link, cost per night and description of the experience.
+- Allows other users to comment on the travel experiences, and edit/delete their comments later.
+- Shows a travel playlist with all the songs for your travel!
+- Allows you to choose your travel mood (like hiking, going on a road trip,etc) and relevant songs are recommended using Spotify after authentication using Spotify is done.
+
 ## Technologies Used
 We utilized various technologies ranging from animation tools, web development tools, scripting languages and multiple APIs to build ‘rythMind’. 
-- Front end languages: HTML5, CSS3, Javascript, AJAX
+- Front end languages: HTML5, CSS3, Javascript
 - Front end framework: Bootstrap to design the user interface (UI)
 - Backend: Node.js, Express.js
+- Authentication done using Passport.js.
+- MongoDB is used as a database to store user data.
 - Spotify API: To fetch and manage the relevant catalogs about artists, tracks and playlists.  
-- Microsoft Azure: To create a conversational, friendly echo chatbot for rythMind which engages in a friendly conversation with the user helping him/her/them talk about their emotions and guiding them towards a calming experience by suggesting relevant songs, playlists, meditation or breathing exercises.
-- echoAR: Incorporated echoAR's 3D models for providing a visually rich and engrossing environment to users. 
-- Pexels API: To fetch images corresponding to the emotions displayed on our web app presently. 
-- Socket.io: To build multiple listening rooms, each dedicated to a particular feeling or emotion with songs playing according to the mood of the room. Users in the same room can also chat with each other while listening to music.
-- Voiceflow: Used HACKNITR 2.0 sponsor resources for developing a comprehensive voice channel bot. 
-- Constant Contact email marketing tools: To set up a newsletter service for our subscribed users. 
-- Trained the Microsoft Azure chatbot further for more personalized conversations.
-- Making the web app a lot more responsive so as to allow easy viewing and good UX for every screen size.
-- Adding all the animations with CSS and JS to the landscape pages.
+- 'Connect-flash' used to render success and error messages
 
 
